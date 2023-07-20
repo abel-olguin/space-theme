@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-parent-item{
+    @apply block py-10 px-5 lg:inline-block text-white hover:text-white border-b-2 border-transparent hover:border-white
+    transition-all delay-300 ease-in-out hover:bg-gray-800 font-semibold;
+}
+
+.nav-parent-item.active {
+    @apply border-b-2 border-white bg-gray-800;
+}
+.nav-dropdown-item{
+    @apply items-center absolute invisible group-hover:visible w-40 bg-gray-800 border-gray-500 shadow-sm z-10 border-b-2 border-transparent hover:border-white
+    transition-all delay-300 ease-in-out hover:bg-gray-900;
+}
+
+.ui-tabs-tab{
+    @apply block border-b-2 border-transparent hover:border-white px-3 pb-3
+}
+
+.ui-state-active{
+    @apply border-b-2 border-white
+}
+
+.ui-tabs-panel{
+    @apply pt-5
+}
