@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e("#tabs").tabs({activate:function(a,t){e("#destination-image").hide(),e("#destination-image").attr("src",e(t.newTab[0]).data("image")),e("#destination-image").show("slow")}}),e("#toggleMenu").on("click",()=>{e("#menu-default").toggleClass("hidden")})});
